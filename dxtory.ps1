@@ -26,7 +26,6 @@ function AddStaticFilename($filename) {
 AddWildcardFilename "C:\Windows\SysWOW64\Macromed\Flash\" "FlashPlayerPlugin.*\.exe"
 
 #static filenames
-
 AddStaticFilename "Discord.exe"
 AddStaticFilename "DiscordPTB.exe"
 AddStaticFilename "slack.exe"
@@ -38,6 +37,7 @@ AddStaticFilename "ReShade Assistant Preview.exe"
 AddStaticFilename "TeamViewer.exe"
 AddStaticFilename "Battle.net.exe"
 AddStaticFilename "HD-Frontend.exe"
+
 foreach ($ignore in $ignoreList) {
     if (!($ignore.static)) {
         $regex = "^" + $ignore.regex
